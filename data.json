@@ -1,0 +1,112 @@
+[
+  {
+    "image_url": "/xdata/images/hotel/270x200/371614943.jpg?k=27e679e152cb3fe872840ec8052d75b8a0d97f6fb69ce482bb5e86093ed42623&o=",
+    "review_score": "8.7",
+    "review_word": "Tuyệt vời",
+    "rating": 5,
+    "latitude": "16.0402661385643",
+    "hotel_title": "Pullman Danang Beach Resort",
+    "review_nr": 299,
+    "longitude": "108.249535560608",
+    "id": 265220
+  },
+  {
+    "id": 1364833,
+    "review_nr": 72,
+    "longitude": "108.22718",
+    "hotel_title": "THE BLOSSOM RESORT ISLAND - All Inclusive",
+    "rating": 5,
+    "latitude": "16.045872",
+    "review_score": "8.8",
+    "review_word": "Tuyệt vời",
+    "image_url": "/xdata/images/hotel/270x200/248163261.jpg?k=e506684f8281a120177cca34ec0c3d5137b3270d542ea8e5e7d38bd68b24ff8a&o="
+  },
+  {
+    "hotel_title": "Glese Furama Pool Villas & Resort Danang",
+    "review_nr": 4,
+    "longitude": "108.282035708759",
+    "id": 9920812,
+    "image_url": "/xdata/images/hotel/270x200/451718596.jpg?k=806a716f734004afda7f7b874a3fd82c65542ee8f799f2ccbb0ff98139a9a37e&o=",
+    "review_word": "Xuất sắc",
+    "review_score": "10.0",
+    "latitude": "15.9741891448022",
+    "rating": 5
+  },
+  {
+    "longitude": "108.251152754162",
+    "review_nr": 6,
+    "id": 9920785,
+    "hotel_title": "Glese Pool Villas & Resort Danang",
+    "latitude": "16.0370271105377",
+    "rating": 5,
+    "image_url": "/xdata/images/hotel/270x200/449993920.jpg?k=0338d8b8eaf2c379e24e100292484af9d3734c4d01339312f6a4ff2395be5fd2&o=",
+    "review_score": "10.0",
+    "review_word": "Xuất sắc"
+  },
+  {
+    "image_url": "/xdata/images/hotel/270x200/112611436.jpg?k=49410eff50308f5cf3f89af1fbee0ede1d1d11c763bec6da5fedfa1c60195cb9&o=",
+    "review_score": "8.2",
+    "review_word": "Rất tốt",
+    "latitude": "15.978468685826",
+    "rating": 5,
+    "hotel_title": "Maha Mangala Zen Garden & Residence",
+    "review_nr": 93,
+    "longitude": "108.282084167003",
+    "id": 1342232
+  },
+  {
+    "review_score": "8.3",
+    "review_word": "Rất tốt",
+    "image_url": "/xdata/images/hotel/270x200/170700850.jpg?k=2311248a8618ae2abb3ff0e5d12dd73961825b8cabfd8d6507deec7edb9c9897&o=",
+    "latitude": "15.9996825253986",
+    "rating": 5,
+    "hotel_title": "Melia Danang Beach Resort",
+    "id": 1012795,
+    "longitude": "108.269735276699",
+    "review_nr": 39
+  },
+  {
+    "image_url": "/xdata/images/hotel/270x200/205588180.jpg?k=eadaa920a9bd154b5b72d7731117eca731a9cca24a07331b95cd679250b18064&o=",
+    "review_word": "Rất tốt",
+    "review_score": "8.3",
+    "rating": 5,
+    "latitude": "15.9689125535122",
+    "hotel_title": "Naman Retreat",
+    "review_nr": 272,
+    "longitude": "108.283822238445",
+    "id": 1193343
+  },
+  {
+    "image_url": "/xdata/images/hotel/270x200/302376194.jpg?k=f6265012295c044c8161a0ca3a5077e00a6878a883ae4c992fcf36bc8261e4f0&o=",
+    "review_score": "9.4",
+    "review_word": "Tuyệt hảo",
+    "rating": 5,
+    "latitude": "16.030470316479",
+    "hotel_title": "TIA Wellness Resort - Spa Inclusive",
+    "longitude": "108.254342079163",
+    "review_nr": 158,
+    "id": 264161
+  },
+  {
+    "id": 235894,
+    "longitude": "108.251091241836",
+    "review_nr": 155,
+    "hotel_title": "Furama Resort Danang",
+    "latitude": "16.0399464930207",
+    "rating": 5,
+    "review_word": "Rất tốt",
+    "review_score": "8.1",
+    "image_url": "/xdata/images/hotel/270x200/62371531.jpg?k=fb1828d64f739b526944dcb487699e4625ad8799986e0e4ef5c2c930dcf39b6c&o="
+  },
+  {
+    "hotel_title": "Sheraton Grand Danang Resort & Convention Center",
+    "review_nr": 235,
+    "longitude": "108.276392508915",
+    "id": 2944240,
+    "image_url": "/xdata/images/hotel/270x200/426583825.jpg?k=e0a53af43bc7eaf396c126f02d2f9ade05215e66b2fad857cb7b981888240922&o=",
+    "review_word": "Tuyệt vời",
+    "review_score": "8.6",
+    "latitude": "15.980736673547",
+    "rating": 5
+  }
+]

@@ -1,12 +1,19 @@
-import { useEffect, useRef } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import MainLayout from "./layouts/main";
+import Search from "./modules/Search";
+import Navigation from "./modules/Navigation";
 
 const App = () => {
   return (
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veritatis,
-      dignissimos suscipit fugit labore optio at culpa quas eius officia error
-      numquam sed. Maxime corrupti quibusdam, provident totam corporis nostrum.
-    </p>
+    <BrowserRouter>
+      <Routes>
+        <Route path="react-mapbox" element={<MainLayout />}>
+          <Route path="search" element={<Search />} />
+          <Route path="direction" element={<Navigation />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
