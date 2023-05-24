@@ -8,7 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="react-mapbox">
-          <Route path="search" element={<Search />} />
+          <Route index element={<Search />} />
           <Route path="direction" element={<Navigation />} />
         </Route>
       </Routes>

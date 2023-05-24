@@ -15,7 +15,3 @@ In addition to location search, the app also offers a directions feature. Users 
 1. React
 2. Tailwind CSS
 3. Mapbox API + react-map-gl
-
-## Design inspired by
-
-![preview img](/public/preview.png)
