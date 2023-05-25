@@ -1,4 +1,4 @@
-import MapBox from "../components/Map";
+import MapBox from "../modules/Search/MapSearch";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {

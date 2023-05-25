@@ -3,7 +3,7 @@ import LoadingIcon from "../icons/LoadingIcon";
 const LoadingOverlay = () => {
   return (
     <div className="absolute inset-0">
-      <div className="h-full flex justify-center items-center bg-[#000000a6]">
+      <div className="h-full flex justify-center items-center bg-[#00000033]">
         <LoadingIcon
           width={30}
           height={30}

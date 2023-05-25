@@ -17,3 +17,8 @@ body {
   width: 6px;
   background-color: #ff7e07;
 }
+
+.mapboxgl-popup-close-button {
+  padding: 5px;
+  font-size: 20px;
+}
