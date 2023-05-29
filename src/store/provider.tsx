@@ -1,16 +1,33 @@
-import { useState } from "react";
-import {
-  NavigationContext,
-  NavigationDefaultValue,
-  SearchContext,
-  SearchDefaultValue,
-} from "./context";
+import { useEffect, useState } from "react";
+import { NavigationContext, SearchContext } from "./context";
 import { INavigationProps, ISearchProps } from "./store.type";
 import { IMapboxFeature } from "../interfaces/mapboxSearch";
+import NavigationService from "../api/navigation.api";
 
 const NavigationProvider = ({ children }: INavigationProps) => {
+  const [cordinatesList, setCordinatesList] = useState<number[][]>([]);
+  const [recommendRoutes, setRecommendRoutes] = useState<IRoute[]>([]);
+
+  useEffect(() => {
+    if (cordinatesList.length < 2) return;
+
+    const getData = async () => {
+      const { data } = await NavigationService.direction(cordinatesList);
+      setRecommendRoutes(data.routes);
+    };
+
+    getData();
+  }, [cordinatesList]);
+
   return (
-    <NavigationContext.Provider value={NavigationDefaultValue}>
+    <NavigationContext.Provider
+      value={{
+        cordinatesList,
+        setCordinatesList,
+        recommendRoutes,
+        setRecommendRoutes,
+      }}
+    >
       {children}
     </NavigationContext.Provider>
   );

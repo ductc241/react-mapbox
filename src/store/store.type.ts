@@ -9,7 +9,13 @@ export interface ISearchProps {
     children: ReactNode
 }
 
-export interface INavigationConText { };
+export interface INavigationConText {
+    cordinatesList: number[][],
+    setCordinatesList: Dispatch<SetStateAction<number[][]>>,
+
+    recommendRoutes: IRoute[],
+    setRecommendRoutes: Dispatch<SetStateAction<IRoute[]>>
+};
 
 export interface ISearchContext {
     recommendAddress: IMapboxFeature[],

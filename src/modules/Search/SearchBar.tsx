@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import SearchIcon from "../../icons/SearchIcon";
 import useDebounce from "../../hooks/useDebouce";
-import { search } from "../../api/search";
+import { search } from "../../api/geocoding.api";
 import { AxiosError } from "axios";
 import { isAxiosError } from "axios";
 import { IMapboxError } from "../../interfaces/mapboxError";

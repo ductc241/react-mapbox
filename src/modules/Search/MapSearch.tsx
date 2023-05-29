@@ -18,7 +18,7 @@ const MapBox = () => {
     setViewState({
       longitude: selectedAddress.center[0],
       latitude: selectedAddress.center[1],
-      zoom: 15,
+      zoom: 13,
     });
   }, [selectedAddress]);
 

@@ -3,7 +3,14 @@ import { INavigationConText, ISearchContext } from "./store.type";
 import { IMapboxFeature } from "../interfaces/mapboxSearch";
 
 // Navigation
-const NavigationDefaultValue = {};
+const NavigationDefaultValue: INavigationConText = {
+  cordinatesList: [],
+  setCordinatesList: (state: number[][]) => { },
+
+  recommendRoutes: [],
+  setRecommendRoutes: (state: IRoute[]) => { }
+} as INavigationConText;
+
 const NavigationContext = createContext<INavigationConText>(
   NavigationDefaultValue,
 );
@@ -16,6 +23,7 @@ const SearchDefaultValue: ISearchContext = {
   selectedAddress: undefined,
   setSelectedAddress: (state: IMapboxFeature) => { }
 } as ISearchContext;
+
 const SearchContext = createContext<ISearchContext>(SearchDefaultValue);
 
 export { NavigationContext, NavigationDefaultValue, SearchContext, SearchDefaultValue };
