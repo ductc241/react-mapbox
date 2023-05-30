@@ -1,6 +1,7 @@
 import { createContext } from "react";
 import { INavigationConText, ISearchContext } from "./store.type";
 import { IMapboxFeature } from "../interfaces/mapboxSearch";
+import { IRoute } from "../interfaces/route";
 
 // Navigation
 const NavigationDefaultValue: INavigationConText = {

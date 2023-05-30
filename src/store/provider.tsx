@@ -3,6 +3,7 @@ import { NavigationContext, SearchContext } from "./context";
 import { INavigationProps, ISearchProps } from "./store.type";
 import { IMapboxFeature } from "../interfaces/mapboxSearch";
 import NavigationService from "../api/navigation.api";
+import { IRoute } from "../interfaces/route";
 
 const NavigationProvider = ({ children }: INavigationProps) => {
   const [cordinatesList, setCordinatesList] = useState<number[][]>([]);

@@ -1,5 +1,6 @@
 import { Dispatch, ReactNode, SetStateAction } from "react"
 import { IMapboxFeature } from "../interfaces/mapboxSearch"
+import { IRoute } from "../interfaces/route"
 
 export interface INavigationProps {
     children: ReactNode

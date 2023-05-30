@@ -2,7 +2,6 @@ import { Layer, Map, MapLayerMouseEvent, Marker, Source } from "react-map-gl";
 import { getGeoJsonData, getGeoJsonPoint, layerStyle } from "./map.config";
 import { useContext, useState } from "react";
 import { NavigationContext } from "../../../store/context";
-import MarkerIcon from "../../../icons/MarkerIcon";
 import TargetIcon from "../../../icons/TargetIcon";
 
 const MapNavigation = () => {
@@ -24,7 +23,7 @@ const MapNavigation = () => {
       initialViewState={{
         longitude: 105.86038,
         latitude: 21.0375,
-        zoom: 17,
+        zoom: 14,
       }}
       mapStyle="mapbox://styles/mapbox/streets-v12"
       style={{ width: "100%", height: "100%" }}
@@ -54,15 +53,17 @@ const MapNavigation = () => {
         >
           <Layer {...layerStyle} />
 
-          {recommendRoutes[0].geometry.coordinates.map((coordinate, index) => (
-            <Marker
-              longitude={coordinate[0]}
-              latitude={coordinate[1]}
-              key={index}
-            >
-              <TargetIcon fill="red" />
-            </Marker>
-          ))}
+          {recommendRoutes[0].geometry.coordinates.map(
+            (coordinate: number[], index: number) => (
+              <Marker
+                longitude={coordinate[0]}
+                latitude={coordinate[1]}
+                key={index}
+              >
+                <TargetIcon fill="red" />
+              </Marker>
+            ),
+          )}
         </Source>
       )}
     </Map>

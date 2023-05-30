@@ -1,4 +1,4 @@
-interface IRoute {
+export interface IRoute {
   weight_name: "auto",
   weight: number,
   duration: number, // total duration
@@ -23,8 +23,9 @@ interface IRoute {
           driving_side: string,
           weight: number,
           mode: string,
-        }
-      ]
+        },
+      ],
+      summary: string
     }
   ],
   geometry: {
@@ -34,7 +35,7 @@ interface IRoute {
 }
 
 
-interface IDireactionResponse {
+export interface IDireactionResponse {
   routes: IRoute[],
   waypoints: {
     distance: number,
