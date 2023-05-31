@@ -1,6 +1,11 @@
 import { Layer, Map, MapLayerMouseEvent, Marker, Source } from "react-map-gl";
-import { getGeoJsonData, getGeoJsonPoint, layerStyle } from "./map.config";
-import { useContext, useState } from "react";
+import {
+  getGeoJsonData,
+  getGeoJsonPoint,
+  layerPointStyle,
+  layerStyle,
+} from "./map.config";
+import { useContext, useEffect, useState } from "react";
 import { NavigationContext } from "../../../store/context";
 import TargetIcon from "../../../icons/TargetIcon";
 
@@ -17,6 +22,12 @@ const MapNavigation = () => {
     setCordinatesList(prev => [...prev, [e.lngLat.lng, e.lngLat.lat]]);
   };
 
+  useEffect(() => {
+    if (cordinatesList.length > 0) return;
+
+    setIsEnableClicking(true);
+  }, [cordinatesList]);
+
   return (
     <Map
       mapboxAccessToken={import.meta.env.VITE_MAPBOX_TOKEN}
@@ -30,11 +41,11 @@ const MapNavigation = () => {
       onClick={e => handleClick(e)}
     >
       <Source
-        id="my-data"
+        id="point-layer"
         type="geojson"
         data={getGeoJsonPoint(cordinatesList)}
       >
-        <Layer {...layerStyle} />
+        <Layer {...layerPointStyle} />
 
         {cordinatesList.map((coordinate, index) => (
           <Marker
@@ -47,7 +58,7 @@ const MapNavigation = () => {
 
       {recommendRoutes.length > 0 && (
         <Source
-          id="my-data"
+          id="line-layer"
           type="geojson"
           data={getGeoJsonData(recommendRoutes[0].geometry.coordinates)}
         >
